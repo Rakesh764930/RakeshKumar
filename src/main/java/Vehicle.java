@@ -1,7 +1,7 @@
 public abstract class Vehicle implements IPrintable {
 
-int Make;
-    String Plate;
+private int Make;
+  private   String Plate;
 
 
 
