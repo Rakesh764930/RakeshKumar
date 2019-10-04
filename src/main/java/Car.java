@@ -1,6 +1,7 @@
 public class Car extends Vehicle implements IPrintable {
     // Car's Additional Variable
     private String  Color;
+    private byte NumberOfSeats;
 
     public String getColor() {
         return Color;
@@ -17,8 +18,14 @@ public class Car extends Vehicle implements IPrintable {
     public void setNumberOfSeats(byte numberOfSeats) {
         NumberOfSeats = numberOfSeats;
     }
+    @Override
+    public void printMyData() {
+        System.out.println("Make       : " + Make);
+        System.out.println("Plate        : " + Plate);
+        System.out.println("Color : " + Color );
+        System.out.println("Number Of Seats    : " + NumberOfSeats);
+    }
 
-    private byte NumberOfSeats;
 
 
 
